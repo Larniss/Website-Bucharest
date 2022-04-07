@@ -1,0 +1,217 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header
+{
+    background-image: white;
+    height: 100vh;
+}
+
+.logo img
+{
+    width: 1500 px;
+    height: auto;
+    float: left;
+}
+
+body
+{
+    font-family: monospace;
+    background-image: white;
+    background-size: cover;
+    background-position:left;
+}
+
+.menu-bar{
+    background-color: #1289dd;
+    text-align: left;
+}
+
+.menu-bar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.menu-bar ul li{
+    display: inline-block;
+    background-color: #1289dd;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 60px;
+    font-size: 20px;
+
+}
+
+.menu-bar ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+.menu-bar a:hover{
+    background-color: #000000;
+}
+
+.menu-bar ul li:hover > ul {
+    display: inherit;
+}
+
+.menu-bar ul ul li{
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+
+}
+
+/* Cardurile cu filme */
+
+.card i.bx{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding: 15px; 
+    font-size: 1.3rem;
+}
+.card .con-text {
+    padding: 20px;
+}
+card:hover{
+    transform: translate(0,-10px);
+    box-shadow: 0px 17px 35px 0px rgba(0,0,0,.07);
+}
+.card:hover .con-img{
+    transform: translate(0,-15px);
+}
+.card:hover .con-img img.blur{
+    opacity: .45;
+    transform: translate(-10px,26px);
+}
+.card .con-img{
+    width: calc(100% - 60px);
+    margin: 0px 30px;
+    margin-top: -90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .35s ease-out;
+}
+.card img{
+    height: 200px;
+}
+.card img.blur{
+    position: absolute;
+    filter: blur(15px);
+    z-index: -1;
+    opacity: .35;
+    transform: translate(-10px, 10px) scale(.85);
+    transition: all .35s ease-out;
+}
+h2{
+    font-family: 'Oswald', sans-serif;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+    opacity: .6;
+    margin-top: 10px;
+}
+.card{
+    width: 300px;
+    min-width: 300px;
+    height: auto;
+    background: #fff ;
+    border-radius: 30px;
+    position: relative;
+    z-index: 10;
+    margin: 25px;
+    min-height: 356px;
+    transition: all .25s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,.08);
+    cursor: pointer;
+}
+.con-cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: auto;
+    padding-top: 100px;
+    padding-left: 60px; 
+    padding-right: 50px;
+    scroll-behavior: smooth;
+}
+.con-cards::-webkit-scrollbar{
+    height: 0px;
+}
+.con-cards::after{
+    content: '';
+    display: block;
+    min-width: 20px;
+    height: 100px;
+    position: relative;
+}
+
+.btn{
+    min-width: 60px;
+    height: 60px;
+    border-radius: 20px;
+    background: rgb(136, 195, 230);
+    border: 0px;
+    outline: none;
+    cursor: pointer;
+    z-index: 200;
+    margin: 10px;
+    box-shadow: 0px 0px 0px 0px
+    rgba(0,0,0,.08);
+    transition: all .25s ease;
+}
+.btn:hover{
+    transform: translate(0,-10px);
+    box-shadow: 0px 17px 35px 0px
+    rgba(0,0,0,.07);
+}
+.btn i{
+    font-size: 1.6rem;
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(112, 111, 111) url(images.jpg) ;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.content::after{
+    content: '';
+    left: 80px;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    z-index: 100;
+    background: none;
+    pointer-events: none;
+}
+.content:before{
+    content: '';
+    pointer-events: none;
+    right: 80px;
+    height: 100%;
+    position: absolute;
+    width: 150px;
+    z-index: 100;
+    background: none;
+}

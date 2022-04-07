@@ -1,0 +1,145 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header
+{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    height: 100vh;
+}
+
+.logo img
+{
+    width: 1500 px;
+    height: auto;
+    float: left;
+}
+
+body
+{
+    font-family: monospace;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pic.jpg);
+    background-size: cover;
+    background-position:left;
+}
+
+.menu-bar{
+    background-color: #1289dd;
+    text-align: left;
+}
+
+.menu-bar ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+.menu-bar ul li{
+    display: inline-block;
+    background-color: #1289dd;
+}
+.menu-bar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    line-height: 60px;
+    font-size: 20px;
+
+}
+
+.menu-bar ul ul {
+    display: none;
+    position: absolute;
+    top: 60px;
+}
+
+.menu-bar a:hover{
+    background-color: #000000;
+}
+
+.menu-bar ul li:hover > ul {
+    display: inherit;
+}
+
+.menu-bar ul ul li{
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+
+}
+
+
+.container{
+    width: 1250px;
+    height: 450px;
+    background: #ccc ;
+    margin: 120px auto;
+    display: flex;
+}
+.col{
+    height: 100%;
+    flex:1;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 25px ;
+    transition: 0.6s ;
+}
+
+.col:nth-child(1){
+    background-image: url(romanian-food.jpeg);
+}
+.col:nth-child(2){
+    background-image: url(japanese-food.jpg);
+}
+.col:nth-child(3){
+    background-image: url(indian-food.jpg);
+}
+.col:nth-child(4){
+    background-image: url(chinese-food.jpg);
+}
+.col:nth-child(5){
+    background-image: url(mexican-food.jpg);
+}
+
+h2{
+    text-align:center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.caption{
+    max-width: 230px;
+    font-size: 24px;
+    margin: 28px 0;
+}
+.caption button{
+    border: 1px solid;
+    background: transparent;
+    outline: none;
+    padding: 8px 18px;
+    color: whitesmoke;
+    border-radius: 30px ;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.col:hover{
+    flex-grow: 2.5;
+
+}
+
+.col:hover .caption{
+    display: block;
+}
+.col:hover h2{
+    text-align:left;
+}
